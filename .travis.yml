@@ -6,3 +6,6 @@ script: nosetests tests/test_bitcoins.py
 install:
   - pip install nose
   - pip install . --use-mirrors
+email:
+notifications:
+  email: false
