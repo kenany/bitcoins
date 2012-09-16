@@ -25,8 +25,8 @@ Features
 Bitcoins can currently retrieve the following stats:
 
 - Current difficulty as a multiple of the minimum difficulty (highest target)
-- Number of blocks in the longest block chain (not including the genesis block).
-- Latest block hash.
+- Number of blocks in the longest block chain (not including the genesis block)
+- Latest block hash
 
 
 Installation
