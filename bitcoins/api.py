@@ -31,3 +31,10 @@ def get_block_count():
 
     d = urllib.urlopen(blockexplorer('getblockcount'))
     return int(d.read())
+
+
+def get_latest_hash():
+    """Returns the latest block hash."""
+
+    d = urllib.urlopen(blockexplorer('latesthash'))
+    return d.read()

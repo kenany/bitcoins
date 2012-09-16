@@ -25,4 +25,4 @@ __license__ = 'MIT'
 __copyright__ = 'Copyright 2012 Kenan Yildirim'
 
 from . import utils
-from .api import get_difficulty, get_block_count
+from .api import get_difficulty, get_block_count, get_latest_hash

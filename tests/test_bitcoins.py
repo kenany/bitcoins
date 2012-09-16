@@ -18,5 +18,8 @@ class BitcoinsTestSuite(unittest.TestCase):
     def test_get_block_count(self):
         assert type(bitcoins.get_block_count()) is int
 
+    def test_latest_hash(self):
+        assert type(bitcoins.get_latest_hash()) is str
+
 if __name__ == '__main__':
     unittest.main()
