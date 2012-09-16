@@ -15,5 +15,8 @@ class BitcoinsTestSuite(unittest.TestCase):
     def test_get_difficulty(self):
         assert type(bitcoins.get_difficulty()) is float
 
+    def test_get_block_count(self):
+        assert type(bitcoins.get_block_count()) is int
+
 if __name__ == '__main__':
     unittest.main()

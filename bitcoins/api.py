@@ -12,19 +12,22 @@ This module implements the Bitcoins API.
 """
 
 import urllib
-
-BLOCKEXPLORER_URL = 'https://blockexplorer.com/q/'
-
-
-def blockexplorer(*suffix):
-    """Returns url for BLOCKEXPLORER resource."""
-    return BLOCKEXPLORER_URL + '/'.join(suffix)
+from .utils import blockexplorer
 
 
 def get_difficulty():
-    """Retrieves the current difficulty as a multiple of the minimum difficulty
+    """Returns the current difficulty as a multiple of the minimum difficulty
     (highest target).
     """
 
     d = urllib.urlopen(blockexplorer('getdifficulty'))
     return float(d.read())
+
+
+def get_block_count():
+    """Returns the number of blocks in the longest block chain (not including
+    the genesis block). Equivalent to Bitcoin's getblockcount.
+    """
+
+    d = urllib.urlopen(blockexplorer('getblockcount'))
+    return int(d.read())

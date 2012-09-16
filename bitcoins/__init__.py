@@ -24,4 +24,5 @@ __author__ = 'Kenan Yildirim'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2012 Kenan Yildirim'
 
-from .api import get_difficulty
+from . import utils
+from .api import get_difficulty, get_block_count
