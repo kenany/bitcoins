@@ -38,3 +38,10 @@ def get_latest_hash():
 
     d = urllib.urlopen(blockexplorer('latesthash'))
     return d.read()
+
+
+def get_block_hash(height):
+    """Returns the block hash at a specific height."""
+
+    d = urllib.urlopen(blockexplorer('getblockhash') + '/' + str(height))
+    return d.read()

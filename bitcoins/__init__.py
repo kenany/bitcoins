@@ -8,7 +8,7 @@
 
 """
 bitcoins Cryptocurrency library
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bitcoins is an cryptocurrency library, written in Python, for human beings.
 
@@ -25,4 +25,6 @@ __license__ = 'MIT'
 __copyright__ = 'Copyright 2012 Kenan Yildirim'
 
 from . import utils
-from .api import get_difficulty, get_block_count, get_latest_hash
+from .api import (
+    get_difficulty, get_block_count, get_latest_hash, get_block_hash
+)

@@ -21,5 +21,8 @@ class BitcoinsTestSuite(unittest.TestCase):
     def test_latest_hash(self):
         assert type(bitcoins.get_latest_hash()) is str
 
+    def test_get_block_hash(self):
+        assert type(bitcoins.get_block_hash(1337)) is str
+
 if __name__ == '__main__':
     unittest.main()
