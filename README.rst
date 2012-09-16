@@ -1,6 +1,10 @@
 Bitcoins: Cryptocurrency for Humans
 ===================================
 
+
+.. image:: https://secure.travis-ci.org/KenanY/bitcoins.png?branch=develop
+        :target: https://secure.travis-ci.org/KenanY/bitcoins
+
 Bitcoins is an MIT licensed cryptocurrency library, written in Python, for human
 beings.
 
