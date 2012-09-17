@@ -21,14 +21,19 @@ Nothing is complicated when it's in Python. Not even cryptocurrencies.
     >>> bitcoins.get_block_hash(1337)
     '000000008BF44A528A09D203203A6A97C165CF53A92ECC27AED0B49B86A19564'
 
-For now, this library is only a wrapper to BlockExplorer's stats API. This might
-change as the project matures.
+To access the Bitcoin JSON-RPC API, you need to be running ``bitcoind`` (or
+``bitcoin -server``) on either your local machine or a remote server. For this,
+bitcoins uses `bitcoin-python`_, which allows local and remote connections to
+the block chain. However, bitcoins allows you to go a little further. If you
+don't want to run ``bitcoind`` all the time, bitcoins allows you to retrieve
+(certain) stats from the web APIs instead!
 
 
 Features
 --------
 
-Bitcoins can currently retrieve the following stats:
+Bitcoins can currently retrieve the following stats through the BlockExplorer
+API:
 
 - Current difficulty as a multiple of the minimum difficulty (highest target)
 - Number of blocks in the longest block chain (not including the genesis block)
@@ -48,3 +53,6 @@ Or, if you have to: ::
     $ easy_install bitcoins
 
 But, you probably shouldn't do that.
+
+
+.. _`bitcoin-python`: https://github.com/laanwj/bitcoin-python
