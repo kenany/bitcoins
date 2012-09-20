@@ -22,11 +22,8 @@ Nothing is complicated when it's in Python. Not even cryptocurrencies.
     '000000008BF44A528A09D203203A6A97C165CF53A92ECC27AED0B49B86A19564'
 
 To access the Bitcoin JSON-RPC API, you need to be running ``bitcoind`` (or
-``bitcoin -server``) on either your local machine or a remote server. For this,
-bitcoins uses `bitcoin-python`_, which allows local and remote connections to
-the block chain. However, bitcoins allows you to go a little further. If you
-don't want to run ``bitcoind`` all the time, bitcoins allows you to retrieve
-(certain) stats from the web APIs instead!
+``bitcoin -server``) on either your local machine or a remote server. Bitcoins
+work with this API or optionally web API when retrieving certain stats.
 
 
 Features

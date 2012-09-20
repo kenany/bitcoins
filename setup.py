@@ -16,9 +16,7 @@ if sys.argv[-1] == 'publish':
 os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 packages = [
-    'bitcoins',
-    'bitcoins.packages',
-    'bitcoins.packages.bitcoinrpc'
+    'bitcoins'
 ]
 
 requires = []

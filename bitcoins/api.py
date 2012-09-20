@@ -12,6 +12,7 @@ This module implements the Bitcoins API.
 """
 
 import urllib
+from .packages.bitcoinrpc import connect_to_local
 from .utils import blockexplorer
 
 
@@ -20,6 +21,7 @@ def get_difficulty():
     (highest target).
     """
 
+    conn = connect_to_local()
     d = urllib.urlopen(blockexplorer('getdifficulty'))
     return float(d.read())
 
