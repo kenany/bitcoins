@@ -7,7 +7,7 @@ test:
 
 bitpy:
 	rm -fr bitcoins/packages/bitcoinrpc
-	git clone https://github.com/laanwj/bitcoin-python.git
+	git clone https://github.com/KenanY/bitcoin-python.git
 	cd bitcoin-python && git checkout master && cd ..
 	mv bitcoin-python/src/bitcoinrpc bitcoins/packages/
 	rm -fr bitcoin-python
