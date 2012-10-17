@@ -21,9 +21,7 @@ Nothing is complicated when it's in Python. Not even cryptocurrencies.
     >>> bitcoins.get_block_hash(1337)
     '000000008BF44A528A09D203203A6A97C165CF53A92ECC27AED0B49B86A19564'
 
-To access the Bitcoin JSON-RPC API, you need to be running ``bitcoind`` (or
-``bitcoin -server``) on either your local machine or a remote server. Bitcoins
-work with this API or optionally web API when retrieving certain stats.
+Bitcoins is in **early alpha**. Use with caution.
 
 
 Features

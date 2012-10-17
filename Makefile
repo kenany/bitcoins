@@ -5,6 +5,9 @@ init:
 test:
 	nosetests tests/test_bitcoins.py
 
+clean:
+	git clean -Xfd
+
 bitpy:
 	rm -fr bitcoins/packages/bitcoinrpc
 	git clone https://github.com/KenanY/bitcoin-python.git
